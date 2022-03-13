@@ -1,0 +1,65 @@
+.read-container{
+  font-family: "poppins", sans-serif;
+  padding: 5rem 7rem 5rem 7rem;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  margin:auto;
+  line-height:1.5;
+  flex-direction:column;
+  overflow-wrap:normal;
+  gap:2em;
+}
+.read-container > .Heading-blog {
+		letter-spacing:2px;
+		font-family: "poppins", sans-serif;
+		font-size:40px;
+		color:#CD9C36;
+		font-weight:700;
+		margin-bottom:2rem;
+}
+
+.read-container > h1,h2,h3,h4,h5,h6{
+		color:#101112;
+		letter-spacing:1px;
+		line-height:1.4;
+		font-family:"Roboto",san-serif;
+
+}
+
+.read-container > p {
+		font-family:"Roboto",san-serif;
+		line-height:1.4;
+		letter-spacing:1px;
+		font-weight:300;
+		font-size:22px;
+}
+.read-container > a {
+		color:#CD9C36;
+		font-weight:bold;
+}
+.read-container > p >a {
+		color:#CD9C36;
+		font-weight:bold;
+}
+
+.read-container > p > img{
+		align-self:center;
+		max-width:100%;
+		margin:auto;
+		max-height:500px;
+}
+.eoblog{
+		padding-bottom:7rem;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #CD9C36;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p {
+  font-family: "Roboto", sans-serif;
+  display: inline;
+}
