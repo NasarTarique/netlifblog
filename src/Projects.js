@@ -6,8 +6,12 @@ const Projects = () => {
   const [projects, getProjects] = useState([]);
 
   useEffect(() => {
+		  fetch("https://github.com/NasarTarique/jsontblogtestrepo/blob/master/media/projects/projects.json",{mode:'no-cors'})
+				  .then(response=>{
+						  console.log(response)
+				  })
 
-        getProjects(data);
+        //getProjects(data);
   }, []);
   const getGithub = (elem) => {
     if (elem != "") {
