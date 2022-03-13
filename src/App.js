@@ -1,17 +1,4 @@
-//import logo from './logo.svg';
-//import './App.css';
-//
-//function App() {
-//  return (
-//    <div className="App">
-//    </div>
-//  );
-//}
-//
-//export default App;
-
-import React, { useState, useEffect } from "react";
-import { render } from "react-dom";
+import React  from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import About from "./About";
