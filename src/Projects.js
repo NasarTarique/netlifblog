@@ -6,20 +6,14 @@ const Projects = () => {
   const [projects, getProjects] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://github.com/NasarTarique/jsontblogtestrepo/blob/master/media/projects/projects.json",
-      { mode: "no-cors" }
-    ).then((response) => {
-      console.log(response);
-    });
-
-    getProjects([{
-						"id":"0",
-						"Name":"TorrentPy",
-						"Description":"A Torrent Client CLI written in python",
-						"Github":"https://github.com/NasarTarique/torrent_py",
-						"Website":""
-				}]);
+		  fetch("https://nasartarique.github.io/jsontblogtestrepo/media/projects/projects.json")
+				  .then(response=>{
+						  return response.json()
+				  })
+				  .then(data=>{
+						  console.log(data['projects'])
+						  getProjects(data['projects'])
+				  })
   }, []);
   const getGithub = (elem) => {
     if (elem !== "") {
