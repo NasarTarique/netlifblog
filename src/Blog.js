@@ -5,11 +5,11 @@ const Blog = () => {
   const [blogs, getBlog] = useState([]);
 
   useEffect(() => {
-		  fetch("https://" + window.location.host + "/api/blogs/")
+		  fetch("https://nasartarique.github.io/jsontblogtestrepo/media/blogs/blogs.json")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        getBlog(data);
+        getBlog(data['blogs']);
       });
   }, []);
 
