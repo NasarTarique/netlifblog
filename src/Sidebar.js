@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
-    <div className="sidebar-container">
-      <div className="icon">
+		  <div className={props.clicked?"sidebar-container isactive":"sidebar-container"}>
+     <div className="icon">
         <svg
           width="103"
           height="78"
@@ -24,11 +24,11 @@ const Sidebar = () => {
         </svg>
       </div>
       <div className="routes">
-        <Link to="/">ABOUT ME</Link>
-        <Link to="/projects/">PROJECTS</Link>
-        <Link to="/blogs/">BLOGS</Link>
-		<a href="https://drive.google.com/file/d/1iG1EB0g82uVed2xyo0AKjbijG7zAN_B6/view?usp=sharing" download target="_blank" rel="noopener noreferrer">RESUME</a>
-        <Link to="/contact/">CONTACT ME</Link>
+			  <Link to="/" onClick={()=>{props.handler(false)}}>ABOUT ME</Link>
+        <Link to="/projects/" onClick={()=>{props.handler(false)}}>PROJECTS</Link>
+        <Link to="/blogs/" onClick={()=>{props.handler(false)}}>BLOGS</Link>
+		<a href="https://drive.google.com/file/d/1iG1EB0g82uVed2xyo0AKjbijG7zAN_B6/view?usp=sharing" download target="_blank" rel="noopener noreferrer" onClick={()=>{props.handler(false)}}>RESUME</a>
+        <Link to="/contact/" onClick={()=>{props.handler(false)}}>CONTACT ME</Link>
         <div className="padding1"></div>
         <div className="padding1"></div>
         <div className="padding1"></div>

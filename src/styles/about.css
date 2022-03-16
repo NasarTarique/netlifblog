@@ -17,10 +17,7 @@
 }
 #span-hey {
   font-size: 22px;
-  font-weight: bolder;
-  color: #d0a854;
-}
-.about-para  {
+  font-weight: bolder; color: #d0a854; } .about-para  {
   font-size: 20px;
   padding-top: 1rem;
   width: 500px;
@@ -57,4 +54,8 @@
   width: 100%;
   object-fit: cover;
 }
-
+@media (max-width: 1580px){
+		.about-img{
+				width:0%;
+		}
+}
