@@ -6,14 +6,16 @@ const Projects = () => {
   const [projects, getProjects] = useState([]);
 
   useEffect(() => {
-		  fetch("https://nasartarique.github.io/jsontblogtestrepo/media/projects/projects.json")
-				  .then(response=>{
-						  return response.json()
-				  })
-				  .then(data=>{
-						  console.log(data['projects'])
-						  getProjects(data['projects'])
-				  })
+    fetch(
+      "https://nasartarique.github.io/jsontblogtestrepo/media/projects/projects.json"
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data["projects"]);
+        getProjects(data["projects"]);
+      });
   }, []);
   const getGithub = (elem) => {
     if (elem !== "") {

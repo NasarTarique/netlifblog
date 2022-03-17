@@ -11,8 +11,7 @@
 .about {
   margin: auto;
 }
-.about-header {
-  letter-spacing: 4px;
+.about-header { letter-spacing: 4px;
   padding-bottom: 2rem;
 }
 #span-hey {
@@ -81,6 +80,7 @@
 
 .about{
 		padding-left:1rem;
+		margin-top:50%;
 
 }
   .about-para{
@@ -89,7 +89,7 @@
   letter-spacing: 1.5px;
   padding-top: 1rem;
   min-width:100px ;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   }
 .about-name > span:after {
   transform: translateY(-50%);

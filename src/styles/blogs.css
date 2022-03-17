@@ -48,3 +48,40 @@
 .blog-name{
 		color:#D0A854;
 }
+
+@media(max-width:650px){
+		.blogs-container{
+		padding: 3rem 1rem 2rem 3rem;
+		}
+		.blogs{
+				gap:1.5rem;
+		}
+		.blog-name{
+				font-size:20px;
+		}
+		.blog-block > p{
+				font-size:16px;
+		}
+		.blogs-header{
+				font-size:32px;
+				font-weight:600;
+				letter-spacing:1.3px;
+				padding-bottom:0rem;
+		}
+}
+@media(max-width:450px){
+		.blogs-header{
+				font-size:28px;
+		}
+
+		.blogs-container{
+		padding: 3rem 1rem 2rem 2rem;
+		}
+		.blog-name{
+				font-size:16px;
+		}
+		.blog-block > p{
+				font-size:13px;
+		}
+
+}

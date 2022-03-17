@@ -26,6 +26,7 @@
 		font-family:'Roboto',san-serif;
 		font-weight:300;
 		font-size:18px;
+		max-width:600px;
 		letter-spacing:0.2px;
 		
 }
@@ -50,4 +51,44 @@
 }
 .project-website{
 		margin-left:20px;
+}
+@media(max-width:750px){
+		.projects-container{
+		padding: 4rem 1rem 1rem 5rem;
+		}
+		.projects{
+				gap:1.3rem;
+		}
+		.project-header{
+		font-size:30px;
+		font-weight:700;
+		letter-spacing:1.2px;
+		padding-bottom:2rem;
+		}
+		.project-name{
+				font-size:20px;
+		}
+		.project-block{
+				gap:0.5rem
+		}
+		.project-block > p{
+				font-size:16px;
+				
+		}
+		.github-button > a{
+		text-decoration:none;
+		color:white;
+		font-size:14px;
+		padding: 0.6rem 1.8rem 0.6rem 1.8rem  ;
+		letter-spacing:1.6px;
+		}
+}
+
+@media(max-width:470px){
+		.projects-container{
+		padding: 4rem 1rem 1rem 2rem;
+		} 
+		.project-header{
+				padding-bottom:1.2rem;
+		}
 }
