@@ -6,6 +6,7 @@ const Projects = () => {
   const [projects, getProjects] = useState([]);
 
   useEffect(() => {
+		  document.title = "Projects - Tarique Nasar"
     fetch(
       "https://nasartarique.github.io/jsontblogtestrepo/media/projects/projects.json"
     )

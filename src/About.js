@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./styles/about.css";
 import aboutimg from './imgs/laptop-portfolio.jpg';
 import { Link } from  'react-router-dom';
 
 function About() {
+		useEffect(()=>{
+				document.title = "About Me - Tarique Nasar"
+		},[])
   return (
     <div className="about-container">
       <div className="about">

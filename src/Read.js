@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, {Fragment, useState, useEffect, useCallback } from "react";
 // import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
@@ -22,11 +22,13 @@ const Read = () => {
   }, [getId]);
 
   return (
-    <div className="read-container">
+		  <Fragment>
       <div className="Heading-blog" key={id}>{blog.Heading}</div>
+    <div className="read-container">
       <ReactMarkdown children={blog.Blog}></ReactMarkdown>
       <div className="eoblog"></div>
     </div>
+		  </Fragment>
   );
 };
 

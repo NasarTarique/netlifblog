@@ -1,5 +1,5 @@
 .about-container {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open-sans", sans-serif;
   padding: 10rem;
   width: 100%;
   height: 100%;
@@ -11,7 +11,9 @@
 .about {
   margin: auto;
 }
-.about-header { letter-spacing: 4px;
+.about-header { 
+		font-weight:600;
+		letter-spacing: 4px;
   padding-bottom: 2rem;
 }
 #span-hey {
@@ -61,6 +63,12 @@
   .about-img {
     width: 0%;
   }
+}
+@media (max-width: 650px) {
+		.about-container{
+				padding:4rem;
+		}
+
 }
 @media (max-width: 500px) {
   .about-container {

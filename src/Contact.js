@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/contact.css";
 const Contact = () => {
   const [namefocus, setNamefocus] = useState(false);
@@ -9,6 +9,11 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+		useEffect(()=>{
+				document.title = "Contact Me - Tarique Nasar"
+
+		},[])
   return (
     <div className="contact-container">
       <div className="contactme">

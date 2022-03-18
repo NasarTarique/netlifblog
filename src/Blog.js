@@ -5,6 +5,7 @@ const Blog = () => {
   const [blogs, getBlog] = useState([]);
 
   useEffect(() => {
+		  document.title = "Blogs - Tarique Nasar";
 		  fetch("https://nasartarique.github.io/jsontblogtestrepo/media/blogs/blogs.json")
       .then((response) => response.json())
       .then((data) => {

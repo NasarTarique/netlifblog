@@ -1,7 +1,7 @@
 .read-container{
   font-family: "poppins", sans-serif;
-  padding: 5rem 7rem 5rem 7rem;
-  max-width: 1000px;
+  padding: 1rem 7rem 5rem 7rem;
+  max-width: 900px;
   height: 100%;
   display: flex;
   margin:auto;
@@ -10,9 +10,15 @@
   overflow-wrap:normal;
   gap:2em;
 }
-.read-container > .Heading-blog {
+.Heading-blog {
 		letter-spacing:2px;
 		font-family: "poppins", sans-serif;
+		text-align:center;
+		margin:auto;
+		padding-top:4rem;
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+		max-width:1000px;
 		font-size:40px;
 		color:#CD9C36;
 		font-weight:700;
@@ -23,31 +29,46 @@
 		color:#101112;
 		letter-spacing:1px;
 		line-height:1.4;
-		font-family:"Roboto",san-serif;
+		font-family:"Poppins",sans-serif;
 
 }
 
 .read-container > p {
-		font-family:"Roboto",san-serif;
+		font-family:"Roboto",sans-serif;
 		line-height:1.4;
 		letter-spacing:1px;
-		font-weight:300;
-		font-size:22px;
+		font-weight:500;
 }
-.read-container > a {
+.read-container >  a {
+		color:#CD9C36;
+		font-style:italic;
+}
+.read-container > * >a {
+		font-style:italic;
+		color:#CD9C36;
+}
+
+.read-container > * > *  >a {
+		color:#CD9C36;
+		font-style:italic;
+}
+.read-container>* >* > * > *  >a {
 		color:#CD9C36;
 		font-weight:bold;
 }
-.read-container > p >a {
-		color:#CD9C36;
-		font-weight:bold;
+.read-container > ul,ol{
+		padding-left:2rem;
 }
 
 .read-container > p > img{
 		align-self:center;
 		max-width:100%;
 		margin:auto;
-		max-height:500px;
+}
+.read-container > p >a > img{
+		align-self:center;
+		max-width:100%;
+		margin:auto;
 }
 .eoblog{
 		padding-bottom:7rem;
@@ -62,4 +83,61 @@ blockquote {
 blockquote p {
   font-family: "Roboto", sans-serif;
   display: inline;
+}
+@media(max-width:900px){
+.Heading-blog {
+		font-size:34px;
+		font-weight:700;
+		margin-bottom:1.5rem;
+}
+.read-container{
+		font-size:0.9rem;
+}
+}
+@media(max-width:800px){
+		.Heading-blog{
+				font-size:32px;
+		}
+		.read-container{
+				padding: 1rem 3rem 5rem 3rem;
+		}
+
+}
+@media(max-width:700px){
+		.Heading-blog{
+				margin-bottom:1rem;
+		}
+		.read-container{
+				padding: 1rem 3rem 5rem 3rem;
+		}
+}
+@media(max-width:650px){
+		.read-container{
+				padding: 0rem 2rem 3rem 2rem;
+		}
+
+}
+@media(max-width:550px){
+		.Heading-blog{
+				font-size:30px;
+		}
+		.read-container{
+				font-size:0.85rem;
+		}
+
+}
+@media(max-width:550px){
+		.Heading-blog{
+				font-size:27px;
+				letter-spacing:1px;
+				padding-right:2px;
+		}
+
+
+}
+@media(max-width:450px){
+		.read-container{
+				padding-left:1rem;
+				padding-right:1rem;
+		}
 }
