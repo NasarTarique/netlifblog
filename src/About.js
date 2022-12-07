@@ -17,7 +17,7 @@ function About() {
 
 				  <span>  Tarique Nasar.</span>
           </div>
-				<br />I am a programmer and a 3rd year <br/>BTech student .<br /> I love
+				<br />I am a programmer and a final year <br/>BTech student .<br /> I love
 				coding , football and novels. <br/> check out my projects and blogs.
         </div>
 			  <Link to="/contact">CONTACT</Link>
